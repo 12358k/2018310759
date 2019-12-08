@@ -28,5 +28,8 @@ if(c1.isSelected() && e.getSource()==button1) ta1.append( "课程：" + c1.getLa
 if(c2.isSelected() && e.getSource()==button1) if(e.getSource()==button3) ta2.append("教师姓名："+t3.getText()+"\n"+ "课程名称："+t4.getText()+"\n"+"上课地点："+t6.getText() +"\n"+"课程编号："+t5.getText()+"\n"+"课时："+b4.getSelectedItem() +"\n"+"学分："+b5.getSelectedItem()+"\n");
 majorattribute = new Majorattribute(t4.getText(),t5.getText(),
 t6.getText(),t7.getText(),t8.getText());//同理于上一步，判断选择按钮3后调用Majorattribute方法将教师信息录入。
-public class NewException extends Exception{ public NewException(){ } public NewException(String str){ super(str); } } //设置NewException类，用于排除文本内空字符 File file=new File("C:\Users\18301\Desktop\课程信息.txt"); try { FileInputStream in=new FileInputStream(file); // size 为字串的长度 ，这里一次性读完 int size=in.available(); byte[] buffer=new byte[size]; in.read(buffer); in.close(); str=new String(buffer,"GB2312"); } catch (IOException e1) {
-六、运行截图
+public class NewException extends Exception{ public NewException(){ } public NewException(String str){ super(str); } } //设置NewException类，用于排除文本内空字符 File file=new File("C:\Users\18301\Desktop\课程信息.txt"); try { FileInputStream in=new FileInputStream(file); // size 为字串的长度 ，这里一次性读完 int size=in.available(); byte[] buffer=new byte[size]; in.read(buffer); in.close(); str=new String(buffer,"GB2312");
+六、实验感想
+这最后的Java实验还是有一些方面没有掌握，对于Java的学习还是有待提高，不过通过网上资料与同学交流最终完成了本次实验。本学期的Java实验我学习到了很多东西，对于这门语言有着更深层的了解与体会，我相信这次Java课程一定会对我其他科目的学习有着导向作用。
+
+
